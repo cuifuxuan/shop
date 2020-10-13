@@ -1,0 +1,9 @@
+
+
+ALTER TABLE `yoshop_wxapp_live_room`
+ADD COLUMN `id`  int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键id' FIRST ,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`id`),
+ADD INDEX `room_id` (`room_id`),
+AUTO_INCREMENT=10001;
+
